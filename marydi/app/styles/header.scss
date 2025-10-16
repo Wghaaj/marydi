@@ -1,0 +1,42 @@
+header {
+    .grid-area {
+        display: grid;
+        grid-template-areas: "c d e";
+        align-items: center;
+
+        @media screen and (max-width: 768px) {
+            grid-template-areas: "d"
+            "c";
+
+            .grid-e {
+                display: none;
+            }
+        }
+
+        .grid-a {
+        grid-area: a;
+    }
+
+    .grid-b {
+        grid-area: b;
+    }
+
+    .grid-c {
+        grid-area: c;
+
+        display: grid;
+        grid-template-areas: "a b";
+    }
+
+    .grid-d {
+        grid-area: d;
+    }
+
+    .grid-e {
+        grid-area: e;
+    }
+
+    }
+
+    
+}

@@ -1,0 +1,25 @@
+.pic-container {
+  width: 100vw;
+  height: 20rem; 
+  background-image: url('/white_roses.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @media screen and (max-width: 768px) {
+    height: 15rem; 
+  }
+
+  @media screen and (min-width: 1024px) {
+    height: 30rem;
+  }
+}
+
+.main-container {
+  max-height: fit-content;
+}
+
+.block {
+  height: fit-content;
+}
+

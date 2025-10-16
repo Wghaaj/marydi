@@ -1,0 +1,24 @@
+.grid-area {
+    display: grid;
+    grid-template-areas: "a b "
+    "c c";
+
+    @media screen and (max-width: 768px) {
+        grid-template-areas: 
+        "a"
+        "b"
+        "c"; 
+    }
+
+    .grid-a {
+        grid-area: a;
+    }
+
+    .grid-b {
+        grid-area: b;
+    }
+
+    .grid-c {
+        grid-area: c;
+    }
+}

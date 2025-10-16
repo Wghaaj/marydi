@@ -1,0 +1,18 @@
+.grid-area {
+  display: grid;
+  grid-template-areas: "a b " "c c";
+}
+@media screen and (max-width: 768px) {
+  .grid-area {
+    grid-template-areas: "a" "b" "c";
+  }
+}
+.grid-area .grid-a {
+  grid-area: a;
+}
+.grid-area .grid-b {
+  grid-area: b;
+}
+.grid-area .grid-c {
+  grid-area: c;
+}/*# sourceMappingURL=footer.css.map */
