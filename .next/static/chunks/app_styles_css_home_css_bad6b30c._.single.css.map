@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/app/styles/css/home.css"],"sourcesContent":[".pic-container {\n  width: 100vw;\n  height: 20rem;\n  background-image: url(\"/white_roses.jpeg\");\n  background-repeat: no-repeat;\n  background-size: cover;\n  background-position: center;\n}\n@media screen and (max-width: 768px) {\n  .pic-container {\n    height: 15rem;\n  }\n}\n@media screen and (min-width: 1024px) {\n  .pic-container {\n    height: 30rem;\n  }\n}\n\n.main-container {\n  max-height: fit-content;\n}\n\n.block {\n  height: fit-content;\n}/*# sourceMappingURL=home.css.map */"],"names":[],"mappings":"AAAA;;;;;;;;;AAQA;EACE;;;;;AAIF;EACE;;;;;AAKF;;;;;AAIA"}}]
+}

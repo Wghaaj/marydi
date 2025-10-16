@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/app/styles/css/footer.css"],"sourcesContent":[".grid-area {\n  display: grid;\n  grid-template-areas: \"a b \" \"c c\";\n}\n@media screen and (max-width: 768px) {\n  .grid-area {\n    grid-template-areas: \"a\" \"b\" \"c\";\n  }\n}\n.grid-area .grid-a {\n  grid-area: a;\n}\n.grid-area .grid-b {\n  grid-area: b;\n}\n.grid-area .grid-c {\n  grid-area: c;\n}/*# sourceMappingURL=footer.css.map */"],"names":[],"mappings":"AAAA;;;;;;AAIA;EACE;;;;;;;AAIF;;;;AAGA;;;;AAGA"}}]
+}

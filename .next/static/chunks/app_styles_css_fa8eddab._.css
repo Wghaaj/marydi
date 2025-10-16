@@ -1,0 +1,100 @@
+/* [project]/app/styles/css/footer.css [app-client] (css) */
+.grid-area {
+  grid-template-areas: "a b"
+                       "c c";
+  display: grid;
+}
+
+@media screen and (max-width: 768px) {
+  .grid-area {
+    grid-template-areas: "a"
+                         "b"
+                         "c";
+  }
+}
+
+.grid-area .grid-a {
+  grid-area: a;
+}
+
+.grid-area .grid-b {
+  grid-area: b;
+}
+
+.grid-area .grid-c {
+  grid-area: c;
+}
+
+/* [project]/app/styles/css/header.css [app-client] (css) */
+header .grid-area {
+  grid-template-areas: "c d e";
+  align-items: center;
+  display: grid;
+}
+
+@media screen and (max-width: 768px) {
+  header .grid-area {
+    grid-template-areas: "d"
+                         "c";
+  }
+
+  header .grid-area .grid-e {
+    display: none;
+  }
+}
+
+header .grid-area .grid-a {
+  grid-area: a;
+}
+
+header .grid-area .grid-b {
+  grid-area: b;
+}
+
+header .grid-area .grid-c {
+  grid-area: c;
+  grid-template-areas: "a b";
+  display: grid;
+}
+
+header .grid-area .grid-d {
+  grid-area: d;
+}
+
+header .grid-area .grid-e {
+  grid-area: e;
+}
+
+/* [project]/app/styles/css/home.css [app-client] (css) */
+.pic-container {
+  background-image: url("/white_roses.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 20rem;
+}
+
+@media screen and (max-width: 768px) {
+  .pic-container {
+    height: 15rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .pic-container {
+    height: 30rem;
+  }
+}
+
+.main-container {
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+}
+
+.block {
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+/*# sourceMappingURL=app_styles_css_fa8eddab._.css.map*/
