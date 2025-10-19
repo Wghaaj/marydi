@@ -55,6 +55,12 @@
       "regex": "^/home(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/home(?:/)?$"
+    },
+    {
+      "page": "/products",
+      "regex": "^/products(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/products(?:/)?$"
     }
   ],
   "dataRoutes": [],

@@ -4,5 +4,6 @@
   "/footer/page": "app/footer/page.js",
   "/header/page": "app/header/page.js",
   "/home/page": "app/home/page.js",
-  "/page": "app/page.js"
+  "/page": "app/page.js",
+  "/products/page": "app/products/page.js"
 }

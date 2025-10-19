@@ -8,7 +8,7 @@ export default function HomePage() {
         <main>
             <div className="small-container md:big-container px-[30px] md:px-[60px]!">
                 <div className="top-text mt-[30px]! md:mt-[60px]!">
-                    <p className="text-xl md: text-3xl">We are producing <br /> Handmade Soy Wax Candles</p>
+                    <p className="text-xl md: text-3xl">We are producing <br /> Handmade Natural Wax Candles</p>
                     <p className="text-sm md: text-base pt-[10px]">Our candles are 100% UK manufactured and <br /> hand-poured with love</p>
                     
                     <div className="mt-[30px]! md:mt-[60px]!">

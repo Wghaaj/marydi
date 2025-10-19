@@ -4,5 +4,6 @@
   "/footer/page": "/footer",
   "/header/page": "/header",
   "/home/page": "/home",
-  "/page": "/"
+  "/page": "/",
+  "/products/page": "/products"
 }
