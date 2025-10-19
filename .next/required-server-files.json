@@ -90,6 +90,7 @@
     "compiler": {},
     "expireTime": 31536000,
     "staticPageGenerationTimeout": 60,
+    "output": "export",
     "modularizeImports": {
       "@mui/icons-material": {
         "transform": "@mui/icons-material/{{member}}"
@@ -98,7 +99,7 @@
         "transform": "lodash/{{member}}"
       }
     },
-    "outputFileTracingRoot": "/Users/dianakravachuk/marydi/marydi",
+    "outputFileTracingRoot": "/Users/dianakravachuk/marydi",
     "experimental": {
       "useSkewCookie": false,
       "cacheLife": {
@@ -288,10 +289,10 @@
     "bundlePagesRouterDependencies": false,
     "configFileName": "next.config.ts",
     "turbopack": {
-      "root": "/Users/dianakravachuk/marydi/marydi"
+      "root": "/Users/dianakravachuk/marydi"
     }
   },
-  "appDir": "/Users/dianakravachuk/marydi/marydi",
+  "appDir": "/Users/dianakravachuk/marydi",
   "relativeAppDir": "",
   "files": [
     ".next/routes-manifest.json",
