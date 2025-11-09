@@ -28,8 +28,8 @@ export default function HomePage() {
         
         <div className="small-container md:big-container! px-[30px] md:px-[60px] mt-[15rem]!">
             <div className="flex justify-between items-center flex-col-reverse lg:flex-row! gap-10">
-                <div>
-                    <Image src="bouquet.jpg" width={580} height={620} alt="bouquet"></Image> 
+                <div className="mb-[2rem]! md:mb-[unset]!">
+                    <Image src="/bouquet.jpg" width={580} height={620} alt="Candle Bouquet" className="rounded-lg shadow-lg w-full md:w-[500px]! lg:w-[600px]!" />
                 </div>
                 <div className="max-w-md md:max-w-lg! lg:max-w-xl!">
                     <p className="text-xl md: text-3xl pb-[15px] md:pb-[30px]!">About Us</p>
