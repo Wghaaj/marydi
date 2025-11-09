@@ -29,12 +29,12 @@ export default function HomePage() {
         <div className="small-container md:big-container! px-[30px] md:px-[60px] mt-[15rem]!">
             <div className="flex justify-between items-center flex-col-reverse lg:flex-row! gap-10">
                 <div>
-                    <Image src="/brown_roses.jpeg" width={400} height={400} alt="brown_roses"></Image> 
+                    <Image src="bouquet.jpg" width={580} height={620} alt="bouquet"></Image> 
                 </div>
                 <div className="max-w-md md:max-w-lg! lg:max-w-xl!">
                     <p className="text-xl md: text-3xl pb-[15px] md:pb-[30px]!">About Us</p>
                     <p className="leading-[30px]">
-                        At MaRyDi Candles, we believe in the beauty of craftsmanship and the power of nature. Based in East Kilbride, Scotland, we create elegant candle bouquets that look like real flowers but are lovingly handmade from 100% natural soy wax. Each piece is a blend of artistry, fragrance, and sustainability — designed to bring warmth and serenity to any space. <br />We take pride in using eco-friendly materials and natural fragrances from Nikura, ensuring every creation is gentle on both you and the environment. Whether you’re decorating your home, gifting a loved one, or planning a special event, our customised designs are made to inspire and delight.
+                        At MaRyDi Candles, we believe in the beauty of craftsmanship and the power of nature. Based in East Kilbride, Scotland, we create elegant candle bouquets that look like real flowers but are lovingly handmade from 100% natural wax. Each piece is a blend of artistry, fragrance, and sustainability — designed to bring warmth and serenity to any space. <br />We take pride in using eco-friendly materials and natural fragrances, ensuring every creation is gentle on both you and the environment. Whether you’re decorating your home, gifting a loved one, or planning a special event, our customised designs are made to inspire and delight.
                     </p>
                 </div>
             </div>
