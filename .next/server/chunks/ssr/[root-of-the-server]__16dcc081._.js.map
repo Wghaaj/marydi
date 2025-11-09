@@ -1,1 +1,0 @@
-{"version":3,"sources":["turbopack:///[project]/app/page.tsx"],"sourcesContent":["import HomePage from \"./home/page\";\n\nexport default function Home() {\n  return <HomePage />;\n}\n"],"names":[],"mappings":"kRAAA,EAAA,EAAA,CAAA,CAAA,OAEe,SAAS,IACtB,MAAO,CAAA,EAAA,EAAA,GAAA,EAAC,EAAA,OAAQ,CAAA,CAAA,EAClB"}
