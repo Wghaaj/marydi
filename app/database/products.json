@@ -1,0 +1,92 @@
+[
+    {
+        "id": "1",
+        "productName": "candle bouquet 1",
+        "price":"£20.00",
+        "image": "/images/image1.png"
+    },
+    {
+        "id": "2",
+        "productName": "candle bouquet 2",
+        "price":"£23.00",
+        "image": "/images/image1.png"
+
+    },
+    {
+        "id": "3",
+        "productName": "candle bouquet 3",
+        "price":"£45.00",
+        "image": "/images/image1.png"
+
+    },
+    {
+        "id": "4",
+        "productName": "candle bouquet 4",
+        "price":"£223.00",
+        "image": "/images/image1.png"
+
+    },
+    {
+        "id": "5",
+        "productName": "candle bouquet 5",
+        "price":"£23.00",
+        "image": "/images/image1.png"
+
+    },
+    {
+        "id": "6",
+        "productName": "candle bouquet 6",
+        "price":"£20.00",
+        "image": "/images/image1.png"
+
+    },
+    {
+        "id": "7",
+        "productName": "candle bouquet 7",
+        "price":"£20.00",
+        "image": "/images/image1.png"
+
+    },
+    {
+        "id": "8",
+        "productName": "candle bouquet 8",
+        "price":"£20.00",
+        "image": "/images/image1.png"
+
+    },
+    {
+        "id": "9",
+        "productName": "candle bouquet 9",
+        "price":"£20.00",
+        "image": "/images/image1.png"
+
+    },
+    {
+        "id": "10",
+        "productName": "candle bouquet 10",
+        "price":"£40.00",
+        "image": "/images/image1.png"
+
+    },
+    {
+        "id": "11",
+        "productName": "candle bouquet 11",
+        "price":"£20.00",
+        "image": "/images/image1.png"
+
+    },
+    {
+        "id": "12",
+        "productName": "candle bouquet 12",
+        "price":"£20.00",
+        "image": "/images/image1.png"
+
+    },
+    {
+        "id": "13",
+        "productName": "candle bouquet 13",
+        "price":"£10.00",
+        "image": "/images/image1.png"
+
+    }
+]

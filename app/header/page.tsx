@@ -8,8 +8,9 @@ export default function Header() {
                 <div className="grid-c gap-[30px] md:gap-[60px]!">
                     <Link href="/" className="grid-a hover:text-strange-pink">HOME</Link>
                     <Link href="/products" className="grid-b hover:text-strange-pink">PRODUCTS</Link>
+                    <Link href="/quide" className="grid-f hover:text-strange-pink">GUIDE</Link>
                 </div>
-                <Link href="/home" className="grid-d kalnia text-lg md:text-2xl hover:text-strange-pink">MaRyDi Candles</Link>
+                <Link href="/" className="grid-d kalnia text-lg md:text-2xl hover:text-strange-pink">MaRyDi Candles</Link>
                 <Link href="tel:+447493208453" className="grid-e hover:text-strange-pink">+44 7493 208453</Link>
             </div>
         </header>

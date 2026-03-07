@@ -4,7 +4,7 @@ header {
         grid-template-areas: "c d e";
         align-items: center;
 
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 940px) {
             grid-template-areas: "d"
             "c";
 
@@ -25,7 +25,7 @@ header {
         grid-area: c;
 
         display: grid;
-        grid-template-areas: "a b";
+        grid-template-areas: "a b f";
     }
 
     .grid-d {
@@ -34,6 +34,10 @@ header {
 
     .grid-e {
         grid-area: e;
+    }
+
+    .grid-f {
+        grid-area: f;
     }
 
     }

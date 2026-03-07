@@ -1,6 +1,8 @@
+import "../styles/css/why_animation.css";
+
 export default function WhyUs() {
     return (
-        <div className="p-[30px] lg:p-[60px]! bg-strange-pink text-white text-center max-w-sm sm:max-w-lg md:max-w-xl! lg:right-[60px]! sticky">
+        <div className="why-animation p-[30px] lg:p-[60px]! bg-strange-pink text-white text-center max-w-sm sm:max-w-lg md:max-w-xl! lg:right-[60px]! sticky">
             <h1 className="kalnia text-lg md:text-2xl!">Why Choose MaRyDi Candles?</h1>
             <div className="flex gap-[15px] md:gap-[30px]! pt-[15px] md:pt-[30px]!">
                 <span className="text-lg md:text-3xl!">
