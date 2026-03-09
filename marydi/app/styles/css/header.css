@@ -1,15 +1,7 @@
 header .grid-area {
   display: grid;
-  grid-template-areas: "c d e";
+  grid-template-areas: "a" "b c d";
   align-items: center;
-}
-@media screen and (max-width: 940px) {
-  header .grid-area {
-    grid-template-areas: "d" "c";
-  }
-  header .grid-area .grid-e {
-    display: none;
-  }
 }
 header .grid-area .grid-a {
   grid-area: a;
@@ -19,15 +11,7 @@ header .grid-area .grid-b {
 }
 header .grid-area .grid-c {
   grid-area: c;
-  display: grid;
-  grid-template-areas: "a b f";
 }
 header .grid-area .grid-d {
   grid-area: d;
-}
-header .grid-area .grid-e {
-  grid-area: e;
-}
-header .grid-area .grid-f {
-  grid-area: f;
 }/*# sourceMappingURL=header.css.map */

@@ -1,17 +1,9 @@
 header {
     .grid-area {
         display: grid;
-        grid-template-areas: "c d e";
+        grid-template-areas: "a"
+        "b c d";
         align-items: center;
-
-        @media screen and (max-width: 940px) {
-            grid-template-areas: "d"
-            "c";
-
-            .grid-e {
-                display: none;
-            }
-        }
 
         .grid-a {
         grid-area: a;
@@ -23,24 +15,12 @@ header {
 
     .grid-c {
         grid-area: c;
-
-        display: grid;
-        grid-template-areas: "a b f";
     }
 
     .grid-d {
         grid-area: d;
     }
 
-    .grid-e {
-        grid-area: e;
     }
-
-    .grid-f {
-        grid-area: f;
-    }
-
-    }
-
     
 }

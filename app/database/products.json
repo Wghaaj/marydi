@@ -1,92 +1,130 @@
 [
     {
-        "id": "1",
-        "productName": "candle bouquet 1",
-        "price":"£20.00",
-        "image": "/images/image1.png"
-    },
-    {
-        "id": "2",
-        "productName": "candle bouquet 2",
-        "price":"£23.00",
-        "image": "/images/image1.png"
-
-    },
-    {
-        "id": "3",
-        "productName": "candle bouquet 3",
-        "price":"£45.00",
-        "image": "/images/image1.png"
-
-    },
-    {
-        "id": "4",
-        "productName": "candle bouquet 4",
-        "price":"£223.00",
-        "image": "/images/image1.png"
-
-    },
-    {
-        "id": "5",
-        "productName": "candle bouquet 5",
-        "price":"£23.00",
-        "image": "/images/image1.png"
-
-    },
-    {
-        "id": "6",
-        "productName": "candle bouquet 6",
-        "price":"£20.00",
-        "image": "/images/image1.png"
-
-    },
-    {
-        "id": "7",
-        "productName": "candle bouquet 7",
-        "price":"£20.00",
-        "image": "/images/image1.png"
-
-    },
-    {
-        "id": "8",
-        "productName": "candle bouquet 8",
-        "price":"£20.00",
-        "image": "/images/image1.png"
-
-    },
-    {
-        "id": "9",
-        "productName": "candle bouquet 9",
-        "price":"£20.00",
-        "image": "/images/image1.png"
-
-    },
-    {
-        "id": "10",
-        "productName": "candle bouquet 10",
+        "id": 1,
+        "productName": "Teddy Bear Candle Bouquet",
         "price":"£40.00",
-        "image": "/images/image1.png"
+        "coverImage": "/images/coverTeddy.jpg",
+        "image2":"/images/teddyImage1.JPG",
+        "image3":"/images/teddyImage2.JPG",
+        "image4":"/images/teddyImage3.JPG"
 
     },
     {
-        "id": "11",
-        "productName": "candle bouquet 11",
+        "id": 2,
+        "productName": "Peony & Rose Candle Bouquet",
+        "price":"£30.00",
+        "coverImage": "/images/coverPeony.JPG",
+        "image2":"/images/peonyImage1.JPG",
+        "image3":"/images/peonyImage2.JPG",
+        "image4":"/images/peonyImage3.JPG"
+
+    },
+    {
+        "id": 3,
+        "productName": "Mini Peonies Candle Bouquet",
         "price":"£20.00",
-        "image": "/images/image1.png"
+        "coverImage": "/images/coverMiniPeonies.JPG",
+        "image2":"/images/miniPeonies1.JPG",
+        "image3":"/images/miniPeonies2.JPG",
+        "image4":"/images/miniPeonies3.JPG"
 
     },
     {
-        "id": "12",
-        "productName": "candle bouquet 12",
+        "id": 4,
+        "productName": "Mini Peonies Candle Bouquet",
         "price":"£20.00",
-        "image": "/images/image1.png"
+        "coverImage": "/images/coverWhiteMini.JPG",
+        "image2":"/images/whiteMini1.JPG",
+        "image3":"/images/whiteMini2.JPG",
+        "image4":"/images/whiteMini3.JPG"
 
     },
     {
-        "id": "13",
-        "productName": "candle bouquet 13",
+        "id": 5,
+        "productName": "Floral Candle Bouquet in Ceramic Vase",
+        "price":"£40.00",
+        "coverImage": "/images/ceramic2.JPG",
+        "image2":"/images/ceramic1.JPG",
+        "image3":"/images/coverCeramic.JPG",
+        "image4":"/images/ceramic3.JPG"
+
+    },
+    {
+        "id": 6,
+        "productName": "Teddy Bear Candle Bouquet",
+        "price":"£40.00",
+        "coverImage": "/images/coverTeddyRose.JPG",
+        "image2":"/images/teddyRose1.JPG",
+        "image3":"/images/teddyRose2.JPG",
+        "image4":"/images/teddyRose3.JPG"
+
+    },
+    {
+        "id": 7,
+        "productName": "Teddy Bear Candle Bouquet",
+        "price":"£40.00",
+        "coverImage": "/images/coverHeartTeddy.JPG",
+        "image2":"/images/heartTeddy1.JPG",
+        "image3":"/images/heartTeddy2.JPG",
+        "image4":"/images/teddyRose3.JPG"
+
+    },
+    {
+        "id": 8,
+        "productName": "Handmade Heart in Hands Candle",
         "price":"£10.00",
-        "image": "/images/image1.png"
+        "coverImage": "/images/coverHeart.JPG",
+        "image2":"/images/heart1.JPG",
+        "image3":"/images/heart2.JPG",
+        "image4":"/images/heart3.JPG"
+
+    },
+    {
+        "id": 9,
+        "productName": "Sculptural Heart Candle",
+        "price":"£10.00",
+        "coverImage": "/images/coverSculptHeart.JPG",
+        "image2":"/images/sculptheart1.JPG",
+        "image3":"/images/sculptheart2.JPG",
+        "image4":"/images/sculptheart3.JPG"
+
+    },
+    {
+        "id": 10,
+        "productName": "Teddy Bear Candle with Heart",
+        "price":"£7.00",
+        "coverImage": "/images/coverSngTeddy.JPG",
+        "image2":"/images/sngTeddy1.JPG",
+        "image3":"/images/sngTeddy2.JPG",
+        "image4":"/images/sngTeddy3.JPG"
+    },
+    {
+        "id": 11,
+        "productName": "Handmade Rose Flower Candle Bouquet",
+        "price":"£20.00",
+        "coverImage": "/images/coverRndBox.JPG",
+        "image2":"/images/rndBox1.JPG",
+        "image3":"/images/rndBox2.JPG",
+        "image4":"/images/rndBox3.JPG"
+    },
+    {
+        "id": 12,
+        "productName": "Luxury Floral Candle Bouquet",
+        "price":"£30.00",
+        "coverImage": "/images/coverBlkBox.JPG",
+        "image2":"/images/blkBox1.JPG",
+        "image3":"/images/blkBox2.JPG",
+        "image4":"/images/blkBox3.JPG"
+
+    },
+    {
+        "id": 13,
+        "productName": "Handmade Scented Soy Wax Candle Bouquet",
+        "price":"£40.00",
+        "coverImage": "/images/coverAnvrsr.JPG",
+        "image2":"/images/anvrsr1.JPG",
+        "image3":"/images/anvrsr2.JPG",
+        "image4":"/images/anvrsr3.JPG"
 
     }
 ]
