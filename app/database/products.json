@@ -2,129 +2,376 @@
     {
         "id": 1,
         "productName": "Teddy Bear Candle Bouquet",
-        "price":"£40.00",
+        "price":40.00,
         "coverImage": "/images/coverTeddy.jpg",
         "image2":"/images/teddyImage1.JPG",
         "image3":"/images/teddyImage2.JPG",
-        "image4":"/images/teddyImage3.JPG"
+        "image4":"/images/teddyImage3.JPG",
+        "description":{
+            "type": "soy",
+            "description":"This handcrafted floral candle box is created as a statement piece — where artistry meets calm elegance. Each arrangement is thoughtfully composed using sculpted soy-wax candles shaped as flowers, complemented by soft dried florals and a refined colour palette.",
+            "choose":[
+                "lasts longer and doesn’t fade",
+                "decorative even when not lit",
+                "no watering or maintenance",
+                "perfect keepsake gift"
+            ],
+            "use":[
+                "Candles should be removed from the arrangement before lighting",
+                "Always place on a heat-safe surface",
+                "Trim the wick to approx. 5mm prior to use",
+                "Keep away from drafts, children and pets",
+                "Never leave a candle burning unattended"
+            ],
+            "width":"16cm",
+            "height":"20cm"
+        }
 
     },
     {
         "id": 2,
         "productName": "Peony & Rose Candle Bouquet",
-        "price":"£30.00",
+        "price":30.00,
         "coverImage": "/images/coverPeony.JPG",
         "image2":"/images/peonyImage1.JPG",
         "image3":"/images/peonyImage2.JPG",
-        "image4":"/images/peonyImage3.JPG"
+        "image4":"/images/peonyImage3.JPG",
+        "description":{
+            "type": "soy",
+            "description":"Handmade floral candle bouquet made from natural plant-based wax, designed as a decorative candle arrangement and unique gift. This luxury candle bouquet features hand-poured flower candles inspired by roses and peonies, perfect for home décor, birthdays, Mother’s Day and special occasions. Each arrangement is carefully handcrafted and thoughtfully composed in soft pastel tones, finished with delicate dried floral accents. As every bouquet is made by hand, slight variations in placement and colour are part of its natural charm.",
+            "choose":[
+                "lasts longer and doesn’t fade",
+                "decorative even when not lit",
+                "no watering or maintenance",
+                "perfect keepsake gift"
+            ],
+            "use":[
+                "Candles should be removed from the arrangement before lighting",
+                "Always place on a heat-safe surface",
+                "Trim the wick to approx. 5mm prior to use",
+                "Keep away from drafts, children and pets",
+                "Never leave a candle burning unattended"
+            ],
+            "width":"16cm",
+            "height":"20cm"
+        }
 
     },
     {
         "id": 3,
         "productName": "Mini Peonies Candle Bouquet",
-        "price":"£20.00",
+        "price":20.00,
         "coverImage": "/images/coverMiniPeonies.JPG",
         "image2":"/images/miniPeonies1.JPG",
         "image3":"/images/miniPeonies2.JPG",
-        "image4":"/images/miniPeonies3.JPG"
+        "image4":"/images/miniPeonies3.JPG",
+        "description":{
+            "type": "soy",
+            "description":"A delicate mini candle bouquet made with hand-poured soy wax flowers, inspired by tulips and peonies. A charming decorative piece and a thoughtful gift for birthdays, baby showers, Valentine’s Day or simply to add a soft, elegant touch to your home.",
+            "choose":[
+                "lasts longer and doesn’t fade",
+                "decorative even when not lit",
+                "no watering or maintenance",
+                "perfect keepsake gift"
+            ],
+            "use":[
+                "Candles should be removed from the arrangement before lighting",
+                "Always place on a heat-safe surface",
+                "Trim the wick to approx. 5mm prior to use",
+                "Keep away from drafts, children and pets",
+                "Never leave a candle burning unattended"
+            ],
+            "width":"12cm",
+            "height":"12cm"
+        }
 
     },
     {
         "id": 4,
         "productName": "Mini Peonies Candle Bouquet",
-        "price":"£20.00",
+        "price":20.00,
         "coverImage": "/images/coverWhiteMini.JPG",
         "image2":"/images/whiteMini1.JPG",
         "image3":"/images/whiteMini2.JPG",
-        "image4":"/images/whiteMini3.JPG"
+        "image4":"/images/whiteMini3.JPG",
+        "description":{
+            "type": "soy",
+            "description":"A delicate mini candle bouquet made with hand-poured soy wax flowers, inspired by tulips and peonies. A charming decorative piece and a thoughtful gift for birthdays, baby showers, Valentine’s Day or simply to add a soft, elegant touch to your home.",
+            "choose":[
+                "lasts longer and doesn’t fade",
+                "decorative even when not lit",
+                "no watering or maintenance",
+                "perfect keepsake gift"
+            ],
+            "use":[
+                "Candles should be removed from the arrangement before lighting",
+                "Always place on a heat-safe surface",
+                "Trim the wick to approx. 5mm prior to use",
+                "Keep away from drafts, children and pets",
+                "Never leave a candle burning unattended"
+            ],
+            "width":"22cm",
+            "height":"22cm"
+        }
 
     },
     {
         "id": 5,
         "productName": "Floral Candle Bouquet in Ceramic Vase",
-        "price":"£40.00",
+        "price":40.00,
         "coverImage": "/images/ceramic2.JPG",
         "image2":"/images/ceramic1.JPG",
         "image3":"/images/coverCeramic.JPG",
-        "image4":"/images/ceramic3.JPG"
+        "image4":"/images/ceramic3.JPG",
+        "description":{
+            "type": "soy",
+            "description":"A unique handmade candle bouquet made from natural soy wax — a beautiful alternative to fresh flowers that lasts. Each floral candle bouquet is carefully handcrafted using assorted flower candles, thoughtfully arranged with decorative elements in a ceramic vase. Each bouquet is unique and may vary slightly in flower shapes, colours and arrangement, making every piece truly one of a kind.",
+            "choose":[
+                "lasts longer and doesn’t fade",
+                "decorative even when not lit",
+                "no watering or maintenance",
+                "perfect keepsake gift"
+            ],
+            "use":[
+                "Candles should be removed from the arrangement before lighting",
+                "Always place on a heat-safe surface",
+                "Trim the wick to approx. 5mm prior to use",
+                "Keep away from drafts, children and pets",
+                "Never leave a candle burning unattended"
+            ],
+            "width":"22cm",
+            "height":"22cm"
+        }
 
     },
     {
         "id": 6,
         "productName": "Teddy Bear Candle Bouquet",
-        "price":"£40.00",
+        "price":40.00,
         "coverImage": "/images/coverTeddyRose.JPG",
         "image2":"/images/teddyRose1.JPG",
         "image3":"/images/teddyRose2.JPG",
-        "image4":"/images/teddyRose3.JPG"
+        "image4":"/images/teddyRose3.JPG",
+        "description":{
+            "type": "soy",
+            "description":"This handcrafted floral candle box is created as a statement piece — where artistry meets calm elegance. Each arrangement is thoughtfully composed using sculpted soy-wax candles shaped as flowers, complemented by soft dried florals and a refined colour palette.",
+            "choose":[
+                "lasts longer and doesn’t fade",
+                "decorative even when not lit",
+                "no watering or maintenance",
+                "perfect keepsake gift"
+            ],
+            "use":[
+                "Candles should be removed from the arrangement before lighting",
+                "Always place on a heat-safe surface",
+                "Trim the wick to approx. 5mm prior to use",
+                "Keep away from drafts, children and pets",
+                "Never leave a candle burning unattended"
+            ],
+            "width":"16cm",
+            "height":"20cm"
+        }
 
     },
     {
         "id": 7,
         "productName": "Teddy Bear Candle Bouquet",
-        "price":"£40.00",
+        "price":40.00,
         "coverImage": "/images/coverHeartTeddy.JPG",
         "image2":"/images/heartTeddy1.JPG",
         "image3":"/images/heartTeddy2.JPG",
-        "image4":"/images/teddyRose3.JPG"
+        "image4":"/images/teddyRose3.JPG",
+        "description":{
+            "type": "soy",
+            "description":"This handcrafted floral candle box is created as a statement piece — where artistry meets calm elegance. Each arrangement is thoughtfully composed using sculpted soy-wax candles shaped as flowers, complemented by soft dried florals and a refined colour palette.",
+            "choose":[
+                "lasts longer and doesn’t fade",
+                "decorative even when not lit",
+                "no watering or maintenance",
+                "perfect keepsake gift"
+            ],
+            "use":[
+                "Candles should be removed from the arrangement before lighting",
+                "Always place on a heat-safe surface",
+                "Trim the wick to approx. 5mm prior to use",
+                "Keep away from drafts, children and pets",
+                "Never leave a candle burning unattended"
+            ],
+            "width":"22cm",
+            "height":"22cm"
+        }
 
     },
     {
         "id": 8,
         "productName": "Handmade Heart in Hands Candle",
-        "price":"£10.00",
+        "price":10.00,
         "coverImage": "/images/coverHeart.JPG",
         "image2":"/images/heart1.JPG",
         "image3":"/images/heart2.JPG",
-        "image4":"/images/heart3.JPG"
+        "image4":"/images/heart3.JPG",
+        "description":{
+            "type": "soy",
+            "description":"A sculptural candle designed to make a statement. Perfect as a romantic gift, home décor accent, or Valentine’s Day surprise. Bring warmth, romance, and elegance into your space with this handmade decorative candle. Its sculptural shape make it a perfect statement piece for modern interiors, romantic settings, or special occasions. ",
+            "choose":[
+                "lasts longer and doesn’t fade",
+                "decorative even when not lit",
+                "no watering or maintenance",
+                "perfect keepsake gift"
+            ],
+            "use":[
+                "Candles should be removed from the arrangement before lighting",
+                "Always place on a heat-safe surface",
+                "Trim the wick to approx. 5mm prior to use",
+                "Keep away from drafts, children and pets",
+                "Never leave a candle burning unattended"
+            ],
+            "width":"7.5cm",
+            "height":"7.5cm"
+        }
 
     },
     {
         "id": 9,
         "productName": "Sculptural Heart Candle",
-        "price":"£10.00",
+        "price":10.00,
         "coverImage": "/images/coverSculptHeart.JPG",
         "image2":"/images/sculptheart1.JPG",
         "image3":"/images/sculptheart2.JPG",
-        "image4":"/images/sculptheart3.JPG"
+        "image4":"/images/sculptheart3.JPG",
+        "description":{
+            "type": "soy",
+            "description":"A sculptural heart-shaped candle designed to elevate your space. A romantic handmade piece, perfect for gifting or stylish home décor. This handmade heart-shaped sculptural candle is a beautiful accent for modern interiors and thoughtful gifting. With its elegant flowing lines and minimalist design, it works perfectly as home décor, shelf styling, or a romantic gift for special occasions ",
+            "choose":[
+                "lasts longer and doesn’t fade",
+                "decorative even when not lit",
+                "no watering or maintenance",
+                "perfect keepsake gift"
+            ],
+            "use":[
+                "Candles should be removed from the arrangement before lighting",
+                "Always place on a heat-safe surface",
+                "Trim the wick to approx. 5mm prior to use",
+                "Keep away from drafts, children and pets",
+                "Never leave a candle burning unattended"
+            ],
+            "width":"6.5cm",
+            "height":"8cm"
+        }
 
     },
     {
         "id": 10,
         "productName": "Teddy Bear Candle with Heart",
-        "price":"£7.00",
+        "price":7.00,
         "coverImage": "/images/coverSngTeddy.JPG",
         "image2":"/images/sngTeddy1.JPG",
         "image3":"/images/sngTeddy2.JPG",
-        "image4":"/images/sngTeddy3.JPG"
+        "image4":"/images/sngTeddy3.JPG",
+        "description":{
+            "type": "soy",
+            "description":"A charming teddy bear candle holding a heart, designed to bring warmth and emotion into your space. A handmade decorative piece, perfect for gifting and home décor. This handmade teddy bear candle with a heart is a sweet and meaningful decorative accent. Its soft sculptural details and playful yet elegant design make it a lovely addition to modern interiors and a thoughtful gift for special moments.",
+            "choose":[
+                "lasts longer and doesn’t fade",
+                "decorative even when not lit",
+                "no watering or maintenance",
+                "perfect keepsake gift"
+            ],
+            "use":[
+                "Candles should be removed from the arrangement before lighting",
+                "Always place on a heat-safe surface",
+                "Trim the wick to approx. 5mm prior to use",
+                "Keep away from drafts, children and pets",
+                "Never leave a candle burning unattended"
+            ],
+            "width":"6.5cm",
+            "height":"5cm"
+        }
     },
     {
         "id": 11,
         "productName": "Handmade Rose Flower Candle Bouquet",
-        "price":"£20.00",
+        "price":20.00,
         "coverImage": "/images/coverRndBox.JPG",
         "image2":"/images/rndBox1.JPG",
         "image3":"/images/rndBox2.JPG",
-        "image4":"/images/rndBox3.JPG"
+        "image4":"/images/rndBox3.JPG",
+        "description":{
+            "type": "soy",
+            "description":"A luxury candle bouquet designed to impress. Hand-poured soy wax flower candles arranged in an elegant black gift box — the perfect statement gift for someone special. Created for unforgettable moments, this floral candle bouquet makes a stunning gift for birthdays, weddings, anniversaries, or sophisticated home decor.",
+            "choose":[
+                "lasts longer and doesn’t fade",
+                "decorative even when not lit",
+                "no watering or maintenance",
+                "perfect keepsake gift"
+            ],
+            "use":[
+                "Candles should be removed from the arrangement before lighting",
+                "Always place on a heat-safe surface",
+                "Trim the wick to approx. 5mm prior to use",
+                "Keep away from drafts, children and pets",
+                "Never leave a candle burning unattended"
+            ],
+            "width":"12cm",
+            "height":"12cm"
+        }
     },
     {
         "id": 12,
         "productName": "Luxury Floral Candle Bouquet",
-        "price":"£30.00",
+        "price":30.00,
         "coverImage": "/images/coverBlkBox.JPG",
         "image2":"/images/blkBox1.JPG",
         "image3":"/images/blkBox2.JPG",
-        "image4":"/images/blkBox3.JPG"
+        "image4":"/images/blkBox3.JPG",
+        "description":{
+            "type": "soy",
+            "description":"A unique handmade candle bouquet made from natural soy wax — a beautiful alternative to fresh flowers that lasts. Each floral candle bouquet is carefully handcrafted using assorted flower candles, thoughtfully arranged with decorative elements in a ceramic vase. Each bouquet is unique and may vary slightly in flower shapes, colours and arrangement, making every piece truly one of a kind.",
+            "choose":[
+                "lasts longer and doesn’t fade",
+                "decorative even when not lit",
+                "no watering or maintenance",
+                "perfect keepsake gift"
+            ],
+            "use":[
+                "Candles should be removed from the arrangement before lighting",
+                "Always place on a heat-safe surface",
+                "Trim the wick to approx. 5mm prior to use",
+                "Keep away from drafts, children and pets",
+                "Never leave a candle burning unattended"
+            ],
+            "width":"18cm",
+            "height":"15cm"
+        }
 
     },
     {
         "id": 13,
         "productName": "Handmade Scented Soy Wax Candle Bouquet",
-        "price":"£40.00",
+        "price":40.00,
         "coverImage": "/images/coverAnvrsr.JPG",
         "image2":"/images/anvrsr1.JPG",
         "image3":"/images/anvrsr2.JPG",
-        "image4":"/images/anvrsr3.JPG"
+        "image4":"/images/anvrsr3.JPG",
+        "description":{
+            "type": "soy",
+            "description":"Not just a candle — a bouquet that never fades. This handmade floral candle bouquet is created to impress, surprise, and stay in memory. Delicate soy wax flowers are carefully hand-poured and arranged in a premium box, finished with a soft satin ribbon for an elegant, romantic look.",
+            "choose":[
+                "lasts longer and doesn’t fade",
+                "decorative even when not lit",
+                "no watering or maintenance",
+                "perfect keepsake gift"
+            ],
+            "use":[
+                "Candles should be removed from the arrangement before lighting",
+                "Always place on a heat-safe surface",
+                "Trim the wick to approx. 5mm prior to use",
+                "Keep away from drafts, children and pets",
+                "Never leave a candle burning unattended"
+            ],
+            "width":"16cm",
+            "height":"20cm"
+        }
 
     }
 ]

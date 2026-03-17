@@ -12,7 +12,7 @@ export default function ProductCard({ product }) {
         />
         <div className="pl-[10px] py-[10px]">
             <p className="pb-[10px]">{product.productName}</p>
-            <p className="pb-[10px]">{product.price}</p>
+            <p className="pb-[10px]">£{product.price.toFixed(2)}</p>
             <a href={`/products/${product.id}`} className="underline pr-[10px] hover:text-strange-pink">
                 <button className="py-[4px] px-[15px] bg-strange-pink rounded-4xl text-white">
                     View Details

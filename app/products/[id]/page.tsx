@@ -2,9 +2,9 @@ import products from "../../database/products.json"
 import ProductClient from "./productClient"
 
 type PageProps = {
-  params: {
+  params: Promise<{
     id: string
-  }
+  }>
 }
 
 export function generateStaticParams() {
@@ -13,9 +13,11 @@ export function generateStaticParams() {
   }))
 }
 
-export default function DetailedProduct({ params }: PageProps) {
+export default async function DetailedProduct({ params }: PageProps) {
+  const { id } = await params
+
   const product = products.find(
-    (p) => p.id === Number(params.id)
+    (p) => p.id === Number(id)
   )
 
   if (!product) {

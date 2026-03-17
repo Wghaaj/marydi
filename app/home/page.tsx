@@ -12,7 +12,7 @@ export default function HomePage() {
                     <p className="text-sm md: text-base pt-[10px]">Our candles are 100% UK manufactured and <br /> hand-poured with love</p>
                     
                     <div className="mt-[30px]! md:mt-[60px]!">
-                        <Link className="px-8 py-2 bg-strange-pink mt-[30px]! md:mt-[60px]! text-sm md:text-base hover:text-white hover:bg-black" href='https://www.instagram.com/marydi_candles?igsh=d2ZkYmdiN3Fwcno%3D&utm_source=qr'>Order Now</Link>
+                        <Link className="px-8 py-2 bg-strange-pink mt-[30px]! md:mt-[60px]! text-white text-sm md:text-base hover:bg-black" href='/products'>Order Now</Link>
 
                     </div>
                 </div>
