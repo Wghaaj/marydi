@@ -29,7 +29,7 @@ export default function CartPage() {
                                 onClick={() => decreaseQuantity(index)}
                                 disabled={item.quantity <= 1}
                                 className="w-7 h-7 flex items-center justify-center border rounded hover:bg-gray-200 disabled:opacity-40">
-                                − 
+                                &#45; 
                             </button> 
 
                             <span className="w-6 text-center">{item.quantity}</span>
@@ -37,10 +37,10 @@ export default function CartPage() {
                             <button
                                 onClick={() => increaseQuantity(index)}
                                 className="w-7 h-7 flex items-center justify-center border rounded hover:bg-gray-200">
-                                +
+                                &#43;
                             </button>    
                             </div>
-                            <button onClick={() => removeFromCart(index)} className="bg-strange-pink px-[15px] py-[4px] border border-black rounded-4xl mt-[10px]!">Remove</button>
+                            <button onClick={() => removeFromCart(index)} className="bg-strange-pink px-[15px] py-[4px] border text-white border-black rounded-4xl mt-[10px]!">Remove</button>
                         </div>
                     </div>
                     ))}
