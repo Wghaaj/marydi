@@ -1,9 +1,13 @@
 "use client"
 import { useCart } from "@/app/context/cartContext"
+import { useRouter } from "next/navigation";
+import { Router } from "next/router";
+import { use } from "react";
 
 
 export default function CartPage() {
-    const { cart, removeFromCart, increaseQuantity, decreaseQuantity } = useCart()
+    const { cart, removeFromCart, increaseQuantity, decreaseQuantity } = useCart();
+    const router = useRouter();
     return(
         <>
             <main className="py-[30px]"> 
@@ -46,7 +50,17 @@ export default function CartPage() {
                     ))}
 
                     <p className="mt-[30px]!"> <span className="font-bold">Total:</span> £{cart.reduce((total, item) => total + item.price * item.quantity, 0).toFixed(2)}</p>
-                    <button className="bg-strange-pink px-[2rem] text-white py-[4px] border border-black rounded-4xl mt-[10px]!">Checkout</button>
+                    <button 
+                        disabled={cart.length === 0} 
+                        onClick={() => {
+                            if (cart.length === 0) {
+                                alert("Your cart is empty");
+                                return;
+                            }
+                            router.push("/form");
+                        }} 
+                        className="bg-strange-pink px-[2rem] text-white py-[4px] border border-black rounded-4xl mt-[10px]!">Checkout
+                    </button>
                 </div>
                     
 

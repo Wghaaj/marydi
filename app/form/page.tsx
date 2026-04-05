@@ -1,9 +1,23 @@
+"use client"
+import emailjs from '@emailjs/browser';
+import { useRef } from 'react';
+import { useCart } from '../context/cartContext';
+
+const {cart} = useCart();
+const total = cart.reduce((sum, item) => sum + item.price * item.quantity,0).toFixed(2);
 export default function FormPage() {
+    const formRef = useRef;
+    const handleSubmit = (e) => {
+        e.preventDefault();
+
+        //get cart data from localstorage
+    }
+    
     return(
         <>
             <main className="py-[30px] md:py-[60px] px-[30px] md:px-[60px]">
                 <h1 className="text-md md:text-lg">Please fill in the form below to complete your order</h1>
-                <a href="#" className="text-sm underline underline-offset-2 text-strange-pink hover:text-red-900">
+                <a href="/rules" className="text-sm underline underline-offset-2 text-strange-pink hover:text-red-900">
                     See how everything works before placing an order
                 </a>
 
@@ -25,6 +39,9 @@ export default function FormPage() {
                             <label htmlFor="email" className="text-sm text-white md:text-md mr-2">Email:</label>
                             <input type="email" id="email" name="email" placeholder="Enter your email" className="rounded-md bg-white px-2 py-1 text-sm md:text-md max-w-full" required/>
                         </div>
+                        <button type="submit" className="bg-strange-pink hover:bg-red-900 text-white font-bold py-2 px-4 rounded-md mt-[20px]!">
+                            Submit Order
+                        </button>
                     </div>
                 </form>
             </main>
