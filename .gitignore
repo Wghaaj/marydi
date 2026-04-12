@@ -18,14 +18,8 @@ __MACOSX
 *.log
 npm-debug.log*
 
-# Dependency directories
-# https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git
-/node_modules
 
-# Lock files
-# https://stackoverflow.com/questions/45022048/why-does-npm-install-rewrite-package-lock-json
 
-/yarn.lock
-
-# dotenv environment variables file
+.next
+node_modules
 .env
