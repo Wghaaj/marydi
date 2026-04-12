@@ -1,8 +1,7 @@
 "use client"
 import { useCart } from "@/app/context/cartContext"
 import { useRouter } from "next/navigation";
-import { Router } from "next/router";
-import { use } from "react";
+
 
 
 export default function CartPage() {
@@ -10,10 +9,10 @@ export default function CartPage() {
     const router = useRouter();
     return(
         <>
-            <main className="py-[30px]"> 
+            <main className="py-[30px] w-screen!"> 
                 <hr className="w-[30%] m-0!" />
 
-                <div className="px-[30px] md:pl-[60px] mt-[15px]!">
+                <div className="px-[30px] md:pl-[60px] mt-[15px]! w-full">
                     <h1 className="text-2xl">Cart</h1>
                     <p>Your items:</p>
                     {cart.length === 0 && <p>Your cart is empty</p> }
@@ -53,10 +52,6 @@ export default function CartPage() {
                     <button 
                         disabled={cart.length === 0} 
                         onClick={() => {
-                            if (cart.length === 0) {
-                                alert("Your cart is empty");
-                                return;
-                            }
                             router.push("/form");
                         }} 
                         className="bg-strange-pink px-[2rem] text-white py-[4px] border border-black rounded-4xl mt-[10px]!">Checkout

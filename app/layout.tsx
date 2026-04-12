@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "./header/page";
 import Footer from "./footer/page";
 import { CartProvider } from "./context/cartContext";
+import "intl-tel-input/build/css/intlTelInput.css";
 
 
 
@@ -42,20 +43,20 @@ export const metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
-      <CartProvider >
-        <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-        >
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} min-h-screen flex flex-col antialiased`}
+      >
+        <CartProvider>
           <Header />
           <main>{children}</main>
           <Footer />
-        </body>
-      </CartProvider>
+        </CartProvider>
+      </body>
     </html>
   );
 }

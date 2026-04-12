@@ -6,7 +6,7 @@ export default function Header() {
 
 
     return (
-        <header className="py-[15px] md:py-30px] text-xs md:text-base px-[30px]">
+        <header className="py-[15px] w-full md:py-30px] text-xs md:text-base px-[30px]">
             <div className="flex flex-row items-center">
                 <div className="flex flex-col gap-[10px] m-[0 auto]! w-[100%]">
                     <div>

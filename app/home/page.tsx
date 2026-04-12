@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function HomePage() {
     return (
-        <main>
+        <main className="w-full">
             <div className="small-container md:big-container px-[30px] md:px-[60px]!">
                 <div className="top-text mt-[30px]! md:mt-[60px]!">
                     <p className="text-xl md: text-3xl">We are producing <br /> Handmade Natural Wax Candles</p>

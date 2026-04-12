@@ -3,7 +3,7 @@ import "../styles/css/footer.css";
 
 export default function Footer() {
     return (
-        <footer className="small-container md:big-container! px-[30px] md:px-[60px] mt-[30px] md:mt-[60px]! pt-[30px] text-xs md:text-base! border-t border-strange-pink pt-[30-px] md:pt-[60px]! pb-[5px]">
+        <footer className="small-container w-full md:big-container! px-[30px] md:px-[60px] mt-[30px] md:mt-[60px]! pt-[30px] text-xs md:text-base! border-t border-strange-pink pt-[30-px] md:pt-[60px]! pb-[5px] bottom-0 left-0 right-0 bg-white">
             <div className="grid-area gap-[15px] md:gap-[unset]!">
                 <div className="grid-a">
                     <Link href="/home" className="grid-d kalnia text-lg md:text-2xl hover:text-strange-pink">MaRyDi Candles</Link>

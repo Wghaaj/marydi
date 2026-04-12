@@ -1,44 +1,63 @@
 "use client"
 import emailjs from '@emailjs/browser';
-import { useRef } from 'react';
+import { useRef, useEffect } from 'react';
 import { useCart } from '../context/cartContext';
+import intlTelInput from "intl-tel-input";
 
-const {cart} = useCart();
-const total = cart.reduce((sum, item) => sum + item.price * item.quantity,0).toFixed(2);
 export default function FormPage() {
-    const formRef = useRef;
+    const formRef = useRef(null);
+    const inputRef = useRef(null);
+
+
+    const {cart} = useCart();
+    const total = cart.reduce((sum, item) => sum + item.price * item.quantity,0).toFixed(2);
+
     const handleSubmit = (e) => {
         e.preventDefault();
 
         //get cart data from localstorage
     }
+
+    useEffect(() => {
+    if (inputRef.current) {
+      intlTelInput(inputRef.current, {
+        initialCountry: "auto",
+        geoIpLookup: (callback) => {
+          fetch("https://ipapi.co/json")
+            .then(res => res.json())
+            .then(data => callback(data.country_code))
+            .catch(() => callback("US"));
+        },
+      });
+    }
+  }, []);
+
     
     return(
         <>
-            <main className="py-[30px] md:py-[60px] px-[30px] md:px-[60px]">
-                <h1 className="text-md md:text-lg">Please fill in the form below to complete your order</h1>
+            <main className="py-[30px] w-full md:py-[60px] px-[30px] md:px-[60px] w-screen">
+                <h1 className="text-md md:text-lg">Please fill in the details below to complete your order</h1>
                 <a href="/rules" className="text-sm underline underline-offset-2 text-strange-pink hover:text-red-900">
                     See how everything works before placing an order
                 </a>
 
-                <form action="SEND" className="bg-strange-pink/50 rounded-md py-[30px] px-[30px] mt-[30px]! md:mt-[60px]! max-w-[60%]">
-                    <div className="flex flex-col md:gap-5 items-center w-fit">
-                        <div className="flex flex-col md:flex-row items-center gap-2 w-full" >
-                            <label htmlFor="name" className="text-sm text-white md:text-md mr-2">First Name:</label>
-                            <input type="text" id="name" name="name" placeholder="Enter your name" className="rounded-md bg-white px-2 py-1 text-sm md:text-md max-w-full" required/>
-                        </div>
-                        <div className="flex flex-col md:flex-row mt-[10px]! md:mt-[unset] items-center gap-2 w-full">
-                            <label htmlFor="surname" className="text-sm text-white md:text-md mr-2">Surname:</label>
-                            <input type="text" id="surname" name="surname" placeholder="Enter your surname" className="rounded-md bg-white px-2 py-1 text-sm md:text-md max-w-full" required/>
-                        </div>
-                        <div className="flex flex-col mt-[10px]! md:mt-[unset] md:flex-row items-center gap-2 w-full">
-                            <label htmlFor="phone" className="text-sm text-white md:text-md mr-2">Tel:</label>
-                            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" className="rounded-md bg-white px-2 py-1 text-sm md:text-md max-w-full" required/>
-                        </div>
-                        <div className="flex flex-col mt-[10px]! md:mt-[unset] md:flex-row items-center gap-2 w-full">
-                            <label htmlFor="email" className="text-sm text-white md:text-md mr-2">Email:</label>
-                            <input type="email" id="email" name="email" placeholder="Enter your email" className="rounded-md bg-white px-2 py-1 text-sm md:text-md max-w-full" required/>
-                        </div>
+                <form action="SEND">
+                    <div className="flex m-0! flex-col md:gap-5 mt-[20px]!">
+                        
+                        <label htmlFor="name" className="text-sm m-0! md:text-md">First Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" className="rounded-md bg-strange-pink/40 m-0! p-[5px] text-sm md:text-md max-w-[50vw] md:max-w-[30vw]" required/>
+                    
+                        <label htmlFor="surname" className="text-sm m-0! md:text-md mr-2">Surname:</label>
+                        <input type="text" id="surname" name="surname" placeholder="Enter your surname" className="rounded-md bg-strange-pink/40 m-0! p-[5px] text-sm md:text-md max-w-[50vw] md:max-w-[30vw]" required/>
+
+                        <label htmlFor="phone" className="text-sm m-0! md:text-md mr-2">Tel:</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" className="rounded-md bg-strange-pink/40 m-0! p-[5px] text-sm md:text-md max-w-[50vw] md:max-w-[30vw]" required/>
+
+                        <input ref={inputRef} type="tel" className="input" />
+
+                        <label htmlFor="email" className="text-sm m-0! md:text-md mr-2">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" className="rounded-md bg-strange-pink/40 m-0! p-[5px] text-sm md:text-md max-w-[50vw] md:max-w-[30vw]" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"/>
+                        
                         <button type="submit" className="bg-strange-pink hover:bg-red-900 text-white font-bold py-2 px-4 rounded-md mt-[20px]!">
                             Submit Order
                         </button>
