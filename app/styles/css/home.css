@@ -1,26 +1,31 @@
-.pic-container {
-  width: 100vw;
-  height: 20rem;
-  background-image: url("/white_roses.jpeg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-@media screen and (max-width: 768px) {
-  .pic-container {
-    height: 15rem;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .pic-container {
-    height: 30rem;
-  }
+.small-line {
+  display: block;
+  height: 1px;
+  width: 10px;
 }
 
-.main-container {
-  max-height: fit-content;
+
+.curved-img {
+    position: relative;
+    inset: 0;
+    border-radius: 58% 42% 45% 55% / 55% 48% 52% 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.35);
+    width: 35vw;
+    height: auto;
 }
 
-.block {
-  height: fit-content;
-}/*# sourceMappingURL=home.css.map */
+.curved-main-img {
+   position: relative;
+    inset: 0;
+    border-radius: 50% ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.35);
+    width: 25rem;
+    height: auto;
+}
+

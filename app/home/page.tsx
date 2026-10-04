@@ -5,40 +5,63 @@ import Link from "next/link";
 
 export default function HomePage() {
     return (
-        <main className="w-full">
-            <div className="small-container md:big-container px-[30px] md:px-[60px]!">
-                <div className="top-text mt-[30px]! md:mt-[60px]!">
-                    <p className="text-xl md: text-3xl">We are producing <br /> Handmade Natural Wax Candles</p>
-                    <p className="text-sm md: text-base pt-[10px]">Our candles are 100% UK manufactured and <br /> hand-poured with love</p>
-                    
-                    <div className="mt-[30px]! md:mt-[60px]!">
-                        <Link className="px-8 py-2 bg-strange-pink mt-[30px]! md:mt-[60px]! text-white text-sm md:text-base hover:bg-black" href='/products'>Order Now</Link>
-
+        <>
+        <div className="px-[30px] md:px-[60px] max-w-[100vw]! w-[100vw]">
+            <div className="flex flex-col lg:flex-row items-center justify-between">
+                <div className="max-w-[70vw] lg:max-w-[40vw]">
+                    <p className="text-strange-pink text-[12px] md:text-[14px] m-[0]! flex items-center gap-[10px] max-w-[fit-content]">
+                        <span className="small-line bg-strange-pink"></span>
+                        EAST KILBRIDE, SCOTLAND · EST . 2025
+                    </p>
+                    <p className="text-[2rem] font-semibold md:text-[3rem]">
+                        Flowers that <i className="text-strange-pink">burn</i> as beautifully as they <br /> bloom 
+                    </p>
+                    <p className="text-strange-pink pt-[20px]">
+                        Handmade soy wax candle bouquets, hand-poured in Scotland — 100% natural, biodegradable, and made to order.
+                    </p>
+                    <div className="mt-[20px]!">
+                        <button className="bg-strange-pink hover:bg-black text-white px-[20px] py-[10px] mr-[20px]! rounded-[50px] mt-[20px]">
+                            <Link href="/products">Order Now</Link>
+                        </button>
+                        <button className="border border-strange-pink text-strange-pink hover:bg-black hover:text-white px-[20px] mt-[20px]! lg:mt-[0px]! py-[10px] rounded-[50px] mt-[20px]">
+                            <Link href="/guide">How To Use</Link>
+                        </button>
                     </div>
                 </div>
-             </div>
-        
-        <div className="block pt-[15rem] lg:pt-[10rem]!">
-            <div className="main-container ">
-                <div className="pic-container flex items-center justify-end ">
-                    <WhyUs />
+                <div className="hidden lg:block">
+                    <img className="curved-img" src="/white_roses.jpeg" alt="White Roses"></img>
+                </div>
+            </div>
+            
+
+        </div>
+        <svg className="w-[100vw]! h-[64px] block mt-[100px]! px-[0px]!" viewBox="0 0 1220 64" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0,20 C 80,55 160,0 240,25 C 320,50 400,5 480,22 C 560,40 640,8 720,24 C 800,42 880,6 960,22 C 1040,40 1120,6 1220,24 L1220,64 L0,64 Z" fill="#EFE6DA"/>
+        </svg>
+
+        <div className="px-[30px] md:px-[60px] max-w-[100vw]! w-[100vw]">
+            <WhyUs />
+            <div className="flex flex-col lg:flex-row items-center justify-between mt-[100px]!">
+                <div>
+                    <img className="curved-main-img" src="/main_home.JPG" alt="Home image"></img>
+                </div>
+                <div className="max-w-[70vw] lg:max-w-[40vw] mt-[20px]! md:mt-[0px]!">
+                    <p>&mdash; <span className="text-strange-pink text-[10px] md:text-[12px]">ABOUT US</span></p>
+                    <p className="text-[2rem] md:text-[3rem]">Crafted to look <span className="text-strange-pink italic">beautiful</span>. Made to feel <span className="text-strange-pink italic">special</span>.</p>
+                    <div className="border-l-[2px] border-strange-pink mt-[20px]!">
+                        <p className="text-strange-pink italic pl-[20px]!">“More than candles — pieces made by hand to bring warmth, fragrance, and a little beauty into everyday spaces.”</p>
+                    </div>
+                    <div className="my-[20px]!">
+                        <p>At MaRyDi Candles, we create handmade candle bouquets inspired by flowers, nature, and the beauty of thoughtful details. Each piece is carefully crafted in East Kilbride, Scotland, using natural waxes and fragrances to create something that feels just as special as it looks.
+                        <br /> <br />From meaningful gifts to wedding arrangements and little touches for your own home, our bouquets are made to be enjoyed, remembered, and eventually lit.</p>
+                    </div>
+                    <a href="/about" className="text-strange-pink hover:underline">&#9758; READ OUR FULL STORY </a>
+
                 </div>
             </div>
         </div>
+        </>
         
-        <div className="small-container md:big-container! px-[30px] md:px-[60px] mt-[15rem]!">
-            <div className="flex justify-between items-center flex-col-reverse lg:flex-row! gap-10">
-                <div className="mb-[2rem]! md:mb-[unset]!">
-                    <img src="/bouquet.jpg" width={580} height={620} alt="Candle Bouquet" className="rounded-lg shadow-lg w-full md:w-[500px]! lg:w-[600px]!" />
-                </div>
-                <div className="max-w-md md:max-w-lg! lg:max-w-xl!">
-                    <p className="text-xl md: text-3xl pb-[15px] md:pb-[30px]!">About Us</p>
-                    <p className="leading-[30px]">
-                        At MaRyDi Candles, we believe in the beauty of craftsmanship and the power of nature. Based in East Kilbride, Scotland, we create elegant candle bouquets that look like real flowers but are lovingly handmade from 100% natural wax. Each piece is a blend of artistry, fragrance, and sustainability — designed to bring warmth and serenity to any space. <br />We take pride in using eco-friendly materials and natural fragrances, ensuring every creation is gentle on both you and the environment. Whether you’re decorating your home, gifting a loved one, or planning a special event, our customised designs are made to inspire and delight.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </main>
+        
     );
 }

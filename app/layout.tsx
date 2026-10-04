@@ -4,19 +4,7 @@ import "./globals.css";
 import Header from "./header/page";
 import Footer from "./footer/page";
 import { CartProvider } from "./context/cartContext";
-import "intl-tel-input/build/css/intlTelInput.css";
-
-
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import "intl-tel-input/styles";
 
 export const metadata = {
   title: 'MaRyDi Candles - Handmade Candle-Bouquets',
@@ -49,7 +37,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} min-h-screen flex flex-col antialiased`}
+        className={`min-h-screen flex flex-col antialiased`}
       >
         <CartProvider>
           <Header />

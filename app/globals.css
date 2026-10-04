@@ -8,8 +8,8 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono); */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -20,22 +20,14 @@
 }
 
 @font-face {
-  font-family: Kalnia;
-  src: url("./fonts/Kalnia-VariableFont_wdth\,wght.woff2");
-}
-
-@font-face {
-  font-family: Kodchasan;
-  src: url("./fonts/Kodchasan-Regular.woff2");
+  font-family: 'Fraunces';
+  src: url('fonts/Fraunces.woff2') format('woff2');
 }
 
 body {
-  font-family: 'Kodchasan';
+  font-family: 'Fraunces' !important;
 }
 
-.kalnia {
-  font-family: 'Kalnia';
-}
 
 * {
   margin: 0 auto;
@@ -52,9 +44,20 @@ body {
 }
 
 @theme {
-  --color-strange-pink: #836871
+  --color-strange-pink: #5C3A4C;
+  --color-beige:#FBF7F1;
+  --color-light-beige:#F0EDEC;
+  
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+.iti {
+  margin: 0;
+}
+
+body {
+  background-color: #f0efec;
 }

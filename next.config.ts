@@ -1,8 +1,7 @@
 import { NextConfig } from 'next'
 
-const nextConfig: NextConfig = {
-  output: 'export', // static HTML export
-  // other settings...
-}
-
-export default nextConfig
+const nextConfig = {
+  output: "export",
+  images: { unoptimized: true },
+};
+module.exports = nextConfig;

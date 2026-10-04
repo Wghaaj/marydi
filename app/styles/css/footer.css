@@ -1,18 +1,24 @@
-.grid-area {
-  display: grid;
-  grid-template-areas: "a b " "c c";
+footer {
+  background-color: #F3ECE2;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  padding-bottom: 3rem;
 }
-@media screen and (max-width: 768px) {
-  .grid-area {
-    grid-template-areas: "a" "b" "c";
-  }
+
+.line2 {
+  line-height: 2;
 }
-.grid-area .grid-a {
-  grid-area: a;
+
+.xs-container {
+  max-width: 1200px;
 }
-.grid-area .grid-b {
-  grid-area: b;
+
+.gray-line {
+  background-color: #a7a6a6;
+  height: 1px;
+  width: 100vw;
+  border: 1px;
 }
-.grid-area .grid-c {
-  grid-area: c;
-}/*# sourceMappingURL=footer.css.map */

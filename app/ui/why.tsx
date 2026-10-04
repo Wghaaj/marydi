@@ -1,49 +1,88 @@
-import "../styles/css/why_animation.css";
-
 export default function WhyUs() {
+    const reasons = [
+        {
+            title: "Hand-Poured, always",
+            desc: "Every candle is hand-poured in small batches — no two are exactly alike.",
+            icon: (
+                <svg fill="#FBF7F1" viewBox="0 0 64 64" height="25px" width="25px" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M58.21,24.05l-16.34-3.04-7.94-14.6c-.4-.74-1.17-1.11-1.93-1.11s-1.53,.37-1.93,1.11l-7.94,14.6-16.34,3.04c-1.66,.31-2.35,2.44-1.19,3.67l11.44,12.06-2.16,16.48c-.22,1.67,1.6,2.99,3.12,2.27l15.01-7.15,15.01,7.15c1.52,.72,3.34-.6,3.12-2.27l-2.16-16.48,11.44-12.06c1.16-1.22,.46-3.36-1.19-3.67Zm-16.07-.95l13.99,2.6-14.46,4.7,.47-7.3Zm2.99,15.76l-7.42,1.89-4.1-5.64,6.63-2.15,4.89,5.89Zm-12.13-29.97l6.8,12.5-6.8,2.71V8.89Zm0,17.36l7.12-2.83-.49,7.64-6.63,2.15v-6.97Zm-2-17.36v15.21l-6.8-2.7,6.8-12.5Zm0,17.36v6.97l-6.62-2.15-.49-7.64,7.12,2.83Zm-.62,8.87l-4.1,5.64-7.42-1.89,4.89-5.89,6.63,2.15Zm-8.52-12.02l.47,7.3-14.46-4.7,13.99-2.6Zm-14.62,4.5l14.46,4.7-4.67,5.63L7.24,27.6Zm8.84,27.2l1.85-14.11,7.09,1.81-8.94,12.3Zm1.62,1.18l8.94-12.31,3.91,6.18-12.85,6.12Zm14.3-7.57l-4.1-6.47,4.1-5.64,4.1,5.64-4.1,6.47Zm1.45,1.45l3.91-6.18,8.95,12.31-12.86-6.13Zm5.53-7.36l7.09-1.81,1.85,14.11-8.94-12.3Zm7.98-4.56l-4.67-5.63,14.46-4.7-9.79,10.33Z" />
+                </svg>
+            ),
+        },
+        {
+            title: "100% natural wax",
+            desc: "Biodegradable, clean-burning, and gentle on your home and the environment.",
+            icon: (
+                <svg viewBox="0 0 24 24" fill="none" height="30px" width="30px" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 20V17.6M12 6.4V4M20 12H17.6M6.4 12H4M17.6569 6.34315L15.9598 8.0402M8.0402 15.9598L6.34315 17.6569M6.34293 6.34332L8.03999 8.04038M15.9596 15.96L17.6566 17.657" stroke="#FBF7F1" strokeWidth="1.5" strokeLinecap="round" />
+                </svg>
+            ),
+        },
+        {
+            title: "Softly scented",
+            desc: "Fragranced with natural Nikura oils — noticeable, never overpowering.",
+            icon: (
+                <svg viewBox="0 0 24 24" fill="none" height="25px" width="25px" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.96173 18.9109L9.42605 18.3219L8.96173 18.9109ZM12 5.50063L11.4596 6.02073C11.601 6.16763 11.7961 6.25063 12 6.25063C12.2039 6.25063 12.399 6.16763 12.5404 6.02073L12 5.50063ZM15.0383 18.9109L15.5026 19.4999L15.0383 18.9109ZM7.00061 16.4209C6.68078 16.1577 6.20813 16.2036 5.94491 16.5234C5.68169 16.8432 5.72758 17.3159 6.04741 17.5791L7.00061 16.4209ZM2.34199 13.4115C2.54074 13.7749 2.99647 13.9084 3.35988 13.7096C3.7233 13.5108 3.85677 13.0551 3.65801 12.6917L2.34199 13.4115ZM2.75 9.1371C2.75 6.98623 3.96537 5.18252 5.62436 4.42419C7.23607 3.68748 9.40166 3.88258 11.4596 6.02073L12.5404 4.98053C10.0985 2.44352 7.26409 2.02539 5.00076 3.05996C2.78471 4.07292 1.25 6.42503 1.25 9.1371H2.75ZM8.49742 19.4999C9.00965 19.9037 9.55954 20.3343 10.1168 20.6599C10.6739 20.9854 11.3096 21.25 12 21.25V19.75C11.6904 19.75 11.3261 19.6293 10.8736 19.3648C10.4213 19.1005 9.95208 18.7366 9.42605 18.3219L8.49742 19.4999ZM15.5026 19.4999C16.9292 18.3752 18.7528 17.0866 20.1833 15.4758C21.6395 13.8361 22.75 11.8026 22.75 9.1371H21.25C21.25 11.3345 20.3508 13.0282 19.0617 14.4798C17.7469 15.9603 16.0896 17.1271 14.574 18.3219L15.5026 19.4999ZM22.75 9.1371C22.75 6.42503 21.2153 4.07292 18.9992 3.05996C16.7359 2.02539 13.9015 2.44352 11.4596 4.98053L12.5404 6.02073C14.5983 3.88258 16.7639 3.68748 18.3756 4.42419C20.0346 5.18252 21.25 6.98623 21.25 9.1371H22.75ZM14.574 18.3219C14.0479 18.7366 13.5787 19.1005 13.1264 19.3648C12.6739 19.6293 12.3096 19.75 12 19.75V21.25C12.6904 21.25 13.3261 20.9854 13.8832 20.6599C14.4405 20.3343 14.9903 19.9037 15.5026 19.4999L14.574 18.3219ZM9.42605 18.3219C8.63014 17.6945 7.82129 17.0963 7.00061 16.4209L6.04741 17.5791C6.87768 18.2624 7.75472 18.9144 8.49742 19.4999L9.42605 18.3219ZM3.65801 12.6917C3.0968 11.6656 2.75 10.5033 2.75 9.1371H1.25C1.25 10.7746 1.66995 12.1827 2.34199 13.4115L3.65801 12.6917Z" fill="#FBF7F1" />
+                </svg>
+            ),
+        },
+        {
+            title: "Made to your theme",
+            desc: "Colours, size, and blooms tailored for weddings, birthdays, or everyday joy.",
+            icon: (
+                <svg viewBox="0 0 600 600" height="25px" width="25px" xmlns="http://www.w3.org/2000/svg" fill="#FBF7F1">
+                    <g transform="matrix(0.95173205,0,0,0.95115787,13.901174,12.168794)">
+                        <path d="M 447.70881 -12.781343 A 42.041451 42.041451 0 0 0 405.66786 29.260344 L 405.66786 50.301721 L 27.434765 50.301721 A 42.041302 42.041302 0 0 0 -14.606185 92.341354 A 42.041302 42.041302 0 0 0 27.434765 134.38304 L 405.66786 134.38304 L 405.66786 155.44906 A 42.041451 42.041451 0 0 0 447.70881 197.49075 A 42.041451 42.041451 0 0 0 489.74976 155.44906 L 489.74976 134.38304 L 573.78036 134.38304 A 42.041302 42.041302 0 0 0 615.82336 92.341354 A 42.041302 42.041302 0 0 0 573.78036 50.301721 L 489.74976 50.301721 L 489.74976 29.260344 A 42.041451 42.041451 0 0 0 447.70881 -12.781343 z M 143.0012 197.48869 A 42.041451 42.041451 0 0 0 100.9582 239.53038 L 100.9582 260.5697 L 27.447078 260.5697 A 42.041302 42.041302 0 0 0 -14.593872 302.61139 A 42.041302 42.041302 0 0 0 27.447078 344.65308 L 100.9582 344.65308 L 100.9582 365.7191 A 42.041451 42.041451 0 0 0 143.0012 407.76078 A 42.041451 42.041451 0 0 0 185.04215 365.7191 L 185.04215 344.65308 L 573.79472 344.65308 A 42.041302 42.041302 0 0 0 615.83567 302.61139 A 42.041302 42.041302 0 0 0 573.79472 260.5697 L 185.04215 260.5697 L 185.04215 239.53038 A 42.041451 42.041451 0 0 0 143.0012 197.48869 z M 279.59427 407.76078 A 42.041451 42.041451 0 0 0 237.55332 449.80042 L 237.55332 470.83974 L 27.447078 470.83974 A 42.041302 42.041302 0 0 0 -14.593872 512.88143 A 42.041302 42.041302 0 0 0 27.447078 554.92106 L 237.55332 554.92106 L 237.55332 575.98913 A 42.041451 42.041451 0 0 0 279.59427 618.02877 A 42.041451 42.041451 0 0 0 321.63522 575.98913 L 321.63522 554.92106 L 573.79472 554.92106 A 42.041302 42.041302 0 0 0 615.83567 512.88143 A 42.041302 42.041302 0 0 0 573.79472 470.83974 L 321.63522 470.83974 L 321.63522 449.80042 A 42.041451 42.041451 0 0 0 279.59427 407.76078 z " />
+                    </g>
+                </svg>
+            ),
+        },
+        {
+            title: "A gift that lingers",
+            desc: "Beautiful to display, delightful to burn — elegance and fragrance in one box.",
+            icon: (
+                <svg viewBox="0 0 24 24" fill="none" height="30px" width="30px" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19.5 7.75H18.1C18.5 7.27 18.75 6.67 18.75 6C18.75 4.48 17.52 3.25 16 3.25C14.32 3.25 12.84 4.14 12 5.46C11.16 4.14 9.68 3.25 8 3.25C6.48 3.25 5.25 4.48 5.25 6C5.25 6.67 5.5 7.27 5.9 7.75H4.5C3.81 7.75 3.25 8.31 3.25 9V11.5C3.25 12.1 3.68 12.58 4.25 12.7V19.5C4.25 20.19 4.81 20.75 5.5 20.75H18.5C19.19 20.75 19.75 20.19 19.75 19.5V12.7C20.32 12.58 20.75 12.1 20.75 11.5V9C20.75 8.31 20.19 7.75 19.5 7.75ZM19.25 11.25H12.75V9.25H19.25V11.25ZM16 4.75C16.69 4.75 17.25 5.31 17.25 6C17.25 6.69 16.69 7.25 16 7.25H12.84C13.18 5.82 14.47 4.75 16 4.75ZM8 4.75C9.53 4.75 10.82 5.82 11.16 7.25H8C7.31 7.25 6.75 6.69 6.75 6C6.75 5.31 7.31 4.75 8 4.75ZM4.75 9.25H11.25V11.25H4.75V9.25ZM5.75 12.75H11.25V19.25H5.75V12.75ZM18.25 19.25H12.75V12.75H18.25V19.25Z" fill="#FBF7F1" />
+                </svg>
+            ),
+        },
+    ];
+
     return (
-        <div className="why-animation p-[30px] lg:p-[60px]! bg-strange-pink text-white text-center max-w-sm sm:max-w-lg md:max-w-xl! lg:right-[60px]! sticky">
-            <h1 className="kalnia text-lg md:text-2xl!">Why Choose MaRyDi Candles?</h1>
-            <div className="flex gap-[15px] md:gap-[30px]! pt-[15px] md:pt-[30px]!">
-                <span className="text-lg md:text-3xl!">
-                    01
-                </span>
-                <p className="text-sm md:text-base!"> 
-                    Each bouquet is handmade with care, making every piece unique. We pour creativity and attention into every detail to make our candles look like real flowers, turning them into elegant works of art.
+    <section className="w-full px-[15px] md:px-[25px] lg:px-[30px] max-w-[70vw]!">
+        <div className="w-full bg-strange-pink text-white rounded-[18px] md:rounded-[22px] px-[25px] py-[35px] md:px-[40px] md:py-[45px] lg:px-[60px] lg:py-[50px]">
+            <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-[20px] md:gap-[25px] pb-[30px] md:pb-[35px] border-b border-beige/15">
+                <h2 className="text-[28px] md:text-[34px] lg:text-[38px] leading-[1.1] font-semibold max-w-[450px]">
+                    Why people choose a <br className="hidden sm:block" /> MaRyDi bouquet
+                </h2>
+
+                <p className="text-beige/70 text-[12px] md:text-[13px] lg:text-[14px] leading-[1.6] max-w-[300px] lg:pt-[5px]">
+                    Five reasons every arrangement earns its place on your mantel — or in someone&apos;s hands as a gift.
                 </p>
             </div>
-            <div className="flex gap-[15px] md:gap-[30px]! pt-[15px] md:pt-[30px]!">
-                <span className="text-lg md:text-3xl!">
-                    02
-                </span>
-                <p className="text-sm md:text-base!"> 
-                    We use 100% natural soy wax, which is eco-friendly, biodegradable, and clean-burning — perfect for your home and safe for the environment.
-                </p>
-            </div>
-            <div className="flex gap-[15px] md:gap-[30px]! pt-[15px] md:pt-[30px]!">
-                <span className="text-lg md:text-3xl!">
-                    03
-                </span>
-                <p className="text-sm md:text-base!"> 
-                    Our candles are infused with natural fragrances from Nikura, ensuring a gentle, lasting scent that enhances any space without overpowering it.
-                </p>
-            </div>
-            <div className="flex gap-[15px] md:gap-[30px]! pt-[15px] md:pt-[30px]!">
-                <span className="text-lg md:text-3xl!">
-                    04
-                </span>
-                <p className="text-sm md:text-base!"> 
-                    Every design can be customised to suit your taste or event theme. We work closely with organisers to create the perfect arrangement for weddings, birthdays, and other special occasions.
-                </p>
-            </div>
-            <div className="flex gap-[15px] md:gap-[30px]! pt-[15px] md:pt-[30px]!">
-                <span className="text-lg md:text-3xl!">
-                    05
-                </span>
-                <p className="text-sm md:text-base!"> 
-                    Marydi Candles are more than décor — they’re the perfect gift. Beautiful to display and delightful to burn, each bouquet combines elegance, fragrance, and sustainability in one unforgettable present.
-                </p>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-[20px] md:mt-[30px] lg:mt-[38px]">
+                {reasons.map((reason, i) => (
+                    <div key={i} className={`flex flex-col items-start justify-center text-left min-h-[150px] py-[25px] px-[5px] md:min-h-[175px] md:p-[25px] lg:min-h-[155px] lg:px-[25px] lg:py-[25px] ${i < 4 ? "border-b border-beige/15" : ""} ${i === 0 || i === 2 ? "md:border-r md:border-beige/15" : ""} ${i === 0 || i === 1 || i === 3 || i === 4 ? "lg:border-r lg:border-beige/15" : ""} ${i === 2 ? "lg:border-r-0 lg:border-b lg:border-beige/15" : ""} ${i === 3 || i === 4 ? "lg:border-t-0 lg:border-b-0" : ""}`}>
+                        <div className="mb-[14px] flex items-center justify-center [&>svg]:w-[22px] [&>svg]:h-[22px] md:[&>svg]:w-[24px] md:[&>svg]:h-[24px]">
+                            {reason.icon}
+                        </div>
+
+                        <h3 className="text-[15px] md:text-[16px] font-semibold leading-[1.3] mb-[12px]">
+                            {reason.title}
+                        </h3>
+
+                        <p className="text-beige/70 text-[12px] md:text-[13px] leading-[1.7] font-light max-w-[380px]">
+                            {reason.desc}
+                        </p>
+                    </div>
+                ))}
+
+                <div className="hidden lg:block min-h-[155px] border-t border-beige/15 bg-transparent"></div>
             </div>
         </div>
-    );
+    </section>
+);
+
 }
