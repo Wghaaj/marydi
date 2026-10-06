@@ -1,7 +1,7 @@
-import { NextConfig } from 'next'
+import type { NextConfig } from "next";
 
-const nextConfig = {
-  output: "export",
+const nextConfig: NextConfig = {
   images: { unoptimized: true },
 };
-module.exports = nextConfig;
+
+export default nextConfig;

@@ -1,0 +1,18 @@
+services:
+  postgres:
+    image: postgres:18
+    container_name: marydi-postgres
+
+    environment:
+      POSTGRES_USER: marydi
+      POSTGRES_PASSWORD: localpassword
+      POSTGRES_DB: marydi_shop
+
+    ports:
+      - "127.0.0.1:5432:5432"
+
+    volumes:
+      - marydi_postgres_data:/var/lib/postgresql
+
+volumes:
+  marydi_postgres_data:
